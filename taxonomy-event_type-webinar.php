@@ -43,6 +43,14 @@ get_header();
 		
 		// The Loop
 		if ( $query->have_posts() ) { ?>
+		
+			<header class="page-header jumbotron text-center">
+				<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
+		
 			<div class="row">
 			<?php while ( $query->have_posts() ) {
 				$query->the_post(); ?>
