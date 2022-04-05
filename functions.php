@@ -138,6 +138,7 @@ add_action( 'widgets_init', 'starter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function starter_scripts() {
+	wp_enqueue_style( 'dashicons' );
 	wp_enqueue_style( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css' );
 	wp_enqueue_style( 'starter-style', get_stylesheet_uri(), array(), _S_VERSION );
 

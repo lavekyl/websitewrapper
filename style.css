@@ -35,6 +35,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Forms
 ## Layouts
 # Components
+	- Header
 	- Navigation
 	- Posts and pages
 	- Comments
@@ -645,6 +646,16 @@ textarea {
 # Components
 --------------------------------------------------------------*/
 
+/* Header
+--------------------------------------------- */
+.site-branding {
+	padding: 20px 0;
+	text-align: center;
+}
+.site-branding p {
+	margin-bottom: 0;
+}
+
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
@@ -653,7 +664,10 @@ textarea {
 }
 
 .main-navigation ul {
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #000;
 	display: none;
+	justify-content: center;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -700,6 +714,15 @@ textarea {
 }
 
 /* Small menu. */
+.menu-toggle {
+	background: transparent;
+	border: none;
+	margin: 0 auto;
+	position: relative;
+}
+.menu-toggle .dashicons {
+	font-size: 16px;
+}
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -767,6 +790,10 @@ textarea {
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.site-main {
+	padding-top: 40px;
 }
 
 /* Comments
