@@ -14,9 +14,13 @@ get_header();
 
 		<?php
 		while ( have_posts() ) :
-			the_post();
+			the_post(); ?>
+			
+			<header class="page-header jumbotron text-center">
+				<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+			</header><!-- .page-header -->
 
-			the_content();
+			<?php the_content();
 
 			the_post_navigation(
 				array(
