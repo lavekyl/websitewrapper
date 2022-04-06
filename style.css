@@ -796,6 +796,28 @@ textarea {
 	padding-top: 40px;
 }
 
+.the-posts {
+	padding-bottom: 20px;
+}
+.the-post {
+	margin-bottom: 40px;
+}
+.the-post-title {
+	font-size: 22px;
+}
+.the-post .the-post-title,
+.the-post .the-post-content p {
+	margin: 5px 0;
+}
+.the-post .date {
+	display: block;
+	font-size: 15px;
+}
+.the-post .the-post-btn {
+	color: #fff;
+	margin-top: 10px;
+}
+
 /* Comments
 --------------------------------------------- */
 .comment-content a {
